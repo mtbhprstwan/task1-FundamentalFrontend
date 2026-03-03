@@ -16,7 +16,7 @@ Tugasmu adalah membuat **satu halaman landing page lengkap** untuk EduSmart meng
 
 ## 📋 Aspek Penilaian
 
-### 1 Hero Section — Utility-first CSS `(25 poin)`
+### 1 Hero Section — Utility-first CSS 
 
 Bangun bagian Hero **tanpa menulis CSS kustom sama sekali** — seluruh styling hanya menggunakan class utilitas Tailwind langsung di markup HTML.
 
@@ -30,7 +30,7 @@ Bangun bagian Hero **tanpa menulis CSS kustom sama sekali** — seluruh styling 
 
 ---
 
-### 2 Card Section Fitur — Responsive Design `(25 poin)`
+### 2 Card Section Fitur — Responsive Design 
 
 Buat section yang menampilkan fitur-fitur EduSmart dalam **grid yang responsif** menggunakan breakpoint mobile-first Tailwind.
 
@@ -51,7 +51,7 @@ Buat section yang menampilkan fitur-fitur EduSmart dalam **grid yang responsif**
 
 ---
 
-### 3 Tombol Reusable — Component Styling `(25 poin)`
+### 3 Tombol Reusable — Component Styling 
 
 Halaman EduSmart memiliki banyak tombol dengan styling yang sama. **Refactor** agar tidak ada pengulangan class panjang — pilih salah satu pendekatan berikut:
 
@@ -98,7 +98,7 @@ export default function Button({ label, variant = 'primary' }: ButtonProps) {
 
 ---
 
-### 4 Custom Theme — Best Practices `(25 poin)`
+### 4 Custom Theme — Best Practices 
 
 Daftarkan warna brand EduSmart ke dalam `tailwind.config.js` dan gunakan secara konsisten di seluruh halaman. **Tidak boleh ada nilai hex/rgb yang ditulis langsung di markup.**
 
