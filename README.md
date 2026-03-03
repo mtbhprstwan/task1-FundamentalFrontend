@@ -2,7 +2,7 @@
 
 > **Mata Kuliah:** Pengembangan Frontend Dasar  
 > **Topik:** Tailwind CSS — Utility-first, Responsive Design, Component Styling, Best Practices  
-> **Bobot:** 100 poin | **Durasi:** 1 Minggu | **Sifat:** Individu
+> **Durasi:** 1 Minggu | **Sifat:** Individu
 
 ---
 
@@ -16,7 +16,7 @@ Tugasmu adalah membuat **satu halaman landing page lengkap** untuk EduSmart meng
 
 ## 📋 Aspek Penilaian
 
-### ① Hero Section — Utility-first CSS `(25 poin)`
+### 1 Hero Section — Utility-first CSS `(25 poin)`
 
 Bangun bagian Hero **tanpa menulis CSS kustom sama sekali** — seluruh styling hanya menggunakan class utilitas Tailwind langsung di markup HTML.
 
@@ -27,15 +27,10 @@ Bangun bagian Hero **tanpa menulis CSS kustom sama sekali** — seluruh styling 
 - Tombol "Mulai Belajar" dengan hover state menggunakan Tailwind
 - Seluruh padding, alignment, dan spacing hanya dari utilitas Tailwind
 
-| Kriteria | Poin |
-|---|---|
-| Tidak ada CSS kustom sama sekali — murni class utilitas Tailwind | 10 |
-| Semua elemen UI Hero terpenuhi sesuai daftar di atas | 10 |
-| Tampilan rapi, proporsional, dan enak dilihat | 5 |
 
 ---
 
-### ② Card Section Fitur — Responsive Design `(25 poin)`
+### 2 Card Section Fitur — Responsive Design `(25 poin)`
 
 Buat section yang menampilkan fitur-fitur EduSmart dalam **grid yang responsif** menggunakan breakpoint mobile-first Tailwind.
 
@@ -53,15 +48,10 @@ Buat section yang menampilkan fitur-fitur EduSmart dalam **grid yang responsif**
 - Deskripsi singkat 1–2 kalimat
 - Shadow dan sudut membulat: `shadow-md rounded-lg`
 
-| Kriteria | Poin |
-|---|---|
-| Layout grid berubah sesuai breakpoint yang ditentukan | 10 |
-| Tiap card memiliki konten lengkap: icon, judul, dan deskripsi | 10 |
-| Gap dan padding antar card menggunakan utilitas Tailwind | 5 |
 
 ---
 
-### ③ Tombol Reusable — Component Styling `(25 poin)`
+### 3 Tombol Reusable — Component Styling `(25 poin)`
 
 Halaman EduSmart memiliki banyak tombol dengan styling yang sama. **Refactor** agar tidak ada pengulangan class panjang — pilih salah satu pendekatan berikut:
 
@@ -105,15 +95,10 @@ export default function Button({ label, variant = 'primary' }: ButtonProps) {
 - Transisi animasi dengan class `transition`
 - Tombol digunakan di minimal **3 tempat**: Hero, Card Section, dan Footer
 
-| Kriteria | Poin |
-|---|---|
-| Tidak ada pengulangan class styling tombol yang identik di markup | 10 |
-| Tersedia minimal 2 variant tombol yang dapat digunakan | 10 |
-| Hover state dan transisi berfungsi dengan baik | 5 |
 
 ---
 
-### ④ Custom Theme — Best Practices `(25 poin)`
+### 4 Custom Theme — Best Practices `(25 poin)`
 
 Daftarkan warna brand EduSmart ke dalam `tailwind.config.js` dan gunakan secara konsisten di seluruh halaman. **Tidak boleh ada nilai hex/rgb yang ditulis langsung di markup.**
 
@@ -147,35 +132,18 @@ module.exports = {
 - Terapkan token warna tersebut di seluruh halaman (contoh: `bg-primary`, `text-secondary`)
 - Tidak boleh ada nilai hex, rgb, atau hsl yang ditulis langsung di markup HTML
 
-| Kriteria | Poin |
-|---|---|
-| `tailwind.config.js` berisi minimal 3 warna custom yang valid | 10 |
-| Token warna digunakan konsisten di seluruh bagian halaman | 10 |
-| Tidak ada nilai warna hardcoded (hex/rgb) di markup HTML | 5 |
 
 ---
 
-## 📊 Rekap Nilai
-
-| Aspek | Poin |
-|---|---|
-| ① Hero Section — Utility-first CSS | 25 |
-| ② Card Section — Responsive Design | 25 |
-| ③ Tombol Reusable — Component Styling | 25 |
-| ④ Custom Theme — Best Practices | 25 |
-| **Total** | **100** |
-
----
 
 ## 🗂️ Struktur Folder yang Dikumpulkan
 
 ```
-NIM_Nama_TugasTailwind/
+NRP_Nama_TugasTailwind/
 ├── index.html              # (atau App.tsx jika React)
 ├── tailwind.config.js      # Konfigurasi custom theme
 ├── input.css               # File CSS Tailwind (dengan @apply jika Pendekatan A)
 ├── output.css              # CSS hasil build Tailwind
-├── README.md               # Penjelasan proyek
 ├── screenshots/
 │   ├── mobile.png          # Tampilan ≤640px
 │   ├── tablet.png          # Tampilan 768px
@@ -183,20 +151,6 @@ NIM_Nama_TugasTailwind/
 └── src/                    # (opsional, jika React)
     └── components/
         └── Button.tsx
-```
-
----
-
-## 📦 Ketentuan Pengumpulan
-
-1. **Struktur folder** sesuai dengan panduan di atas
-2. **Screenshot wajib** di 3 ukuran layar: mobile (≤640px), tablet (768px), desktop (≥1024px)
-3. **README.md** berisi:
-   - Pendekatan component styling yang dipilih (A atau B) beserta alasannya
-   - Penjelasan pemilihan warna brand EduSmart
-   - Cara menjalankan proyek secara lokal
-4. **Compress** seluruh folder menjadi `NIM_Nama_TugasTailwind.zip`
-5. **Upload** ke LMS / Google Classroom sebelum deadline
 
 ---
 
